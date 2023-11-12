@@ -11,23 +11,23 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Check if the class does not exits then only allow the file to add
  */
-if( ! class_exists( 'AcrossWP_Main_Menu' ) ) {
+if( ! class_exists( 'AcrossWP_Sub_Menu' ) ) {
 	/**
 	 * Fired during plugin licences.
 	 *
 	 * This class defines all code necessary to run during the plugin's licences and update.
 	 *
 	 * @since      0.0.1
-	 * @package    AcrossWP_Main_Menu
-	 * @subpackage AcrossWP_Main_Menu/includes
+	 * @package    AcrossWP_Sub_Menu
+	 * @subpackage AcrossWP_Sub_Menu/includes
 	 * @author     AcrossWP <contact@acrosswp.com>
 	 */
-	class AcrossWP_Main_Menu {
+	abstract class AcrossWP_Sub_Menu {
 
 		/**
 		 * The single instance of the class.
 		 *
-		 * @var AcrossWP_Main_Menu
+		 * @var AcrossWP_Sub_Menu
 		 * @since 0.0.1
 		 */
 		protected static $_instance = null;
