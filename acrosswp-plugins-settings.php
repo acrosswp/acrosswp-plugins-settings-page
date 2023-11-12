@@ -41,14 +41,9 @@ if( ! class_exists( 'AcrossWP_Sub_Menu' ) ) {
 			$this->main_menu = AcrossWP_Main_Menu::instance();
 
 			/**
-			 * Load the main menu
+			 * Load the sub menu and there fields
 			 */
-			$this->menu();
-
-			/**
-			 * Load the main fields
-			 */
-			$this->fields();
+			$this->loading();
 		}
 
 
@@ -68,13 +63,6 @@ if( ! class_exists( 'AcrossWP_Sub_Menu' ) ) {
 		 *
 		 * @return void
 		 */
-		abstract function menu();
-
-		/**
-		 * Adds the plugin license page to the admin menu.
-		 *
-		 * @return void
-		 */
-		abstract function fields();
+		abstract function loading();
 	}	
 }
